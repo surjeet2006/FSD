@@ -31,7 +31,7 @@
         <h1>Online Shop</h1>
         <div class="item">Rice: 500</div>
         <div class="item">Tea: 700</div>
-        <div class="item">Cofee: 800</div>
+        <div class="item">Coffee: 800</div>
         <div class="item">Sugar: 1000</div>
         <div class="item">Almond: 1200</div>
         <button onclick="buy()">Buy Now</button>
@@ -41,7 +41,7 @@
         const data = {
             Rice: 500,
             Tea: 700,
-            Cofee: 800,
+            Coffee: 800,
             Sugar: 1000,
             Almond: 1200
         }
@@ -50,10 +50,10 @@
             const prodName = prompt("Enter product name: ");
             const quantity = Number(prompt("Enter quantity in Kg: "));
 
-            let rate = data.prodName;
+            const rate = data[prodName];
             const amount = rate*quantity;
             
-            document.write("Your total Amount is :",amount)
+            document.write("Your total Amount is :", amount)
         }
 
        
