@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: "aditya",
+            class: "UKG",
+            fee: 1200,
+            address: "Noida"
+        }
+        document.write(student) // JavaScript's default string representation of an object is: [object Object]
+        document.write(student.name)
+        document.write(student.class)
+
+        for(let x in student){
+            document.write(student[x]);
+        }
+
+    </script>
+</body>
+</html>

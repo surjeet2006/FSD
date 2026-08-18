@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: auto;
+        }
+        .item{
+            padding: 5px;
+        }
+
+        #card h1{
+            text-align: center;
+        }
+
+        #card button{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1>Online Shop</h1>
+        <div class="item">Rice: 500</div>
+        <div class="item">Tea: 700</div>
+        <div class="item">Cofee: 800</div>
+        <div class="item">Sugar: 1000</div>
+        <div class="item">Almond: 1200</div>
+        <button onclick="buy()">Buy Now</button>
+    </div>
+    <script>
+
+        const data = {
+            Rice: 500,
+            Tea: 700,
+            Cofee: 800,
+            Sugar: 1000,
+            Almond: 1200
+        }
+
+        function buy(){
+            const prodName = prompt("Enter product name: ");
+            const quantity = Number(prompt("Enter quantity in Kg: "));
+
+            let rate = data.prodName;
+            const amount = rate*quantity;
+            
+            document.write("Your total Amount is :",amount)
+        }
+
+       
+    </script>
+</body>
+</html>
